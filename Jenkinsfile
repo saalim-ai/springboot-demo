@@ -14,11 +14,11 @@ pipeline {
                 sh 'sh ./gradlew clean'
             }
         }
-        stage('check') {
+/*        stage('check') {
             steps {
                 sh 'sh ./gradlew check'
             }
-        }
+        }*/
         stage('assemble') {
             steps {
                 sh 'sh ./gradlew assemble'
